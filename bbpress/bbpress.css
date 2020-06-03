@@ -4,11 +4,6 @@
     display: list-item !important;
 }
 
-/*styling to move 'Subscribe' to right hand side */
-.single-forum .subscription-toggle  {
-    float:right !important ;
-}
-
 div.bbp-breadcrumb {
     display: none; /*this will hide all breadcrumbs*/
     }
