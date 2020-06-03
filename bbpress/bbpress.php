@@ -1,5 +1,5 @@
 <?php /*
-Template Name: bbPress
+Template Name: bbPress Page
 Template Post Type: post, page
 */ ?>
 <?php get_header(); ?>
