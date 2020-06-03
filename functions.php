@@ -19,4 +19,22 @@ function mh_magazine_child_styles() {
 }
 add_action('wp_enqueue_scripts', 'mh_magazine_child_styles');
 
+//display bbPress search form above single topics and forums
+
+function rk_bbp_search_form(){
+  
+  if ( bbp_allow_search()) {
+      ?>
+      <div class="bbp-search-form">
+
+          <?php bbp_get_template_part( 'form', 'search' ); ?>
+
+      </div>
+      <?php
+  }
+}
+
+add_action( 'bbp_template_before_single_forum', 'rk_bbp_search_form' );
+add_action( 'bbp_template_before_single_topic', 'rk_bbp_search_form' );
+
 ?>
