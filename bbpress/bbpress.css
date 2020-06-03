@@ -8,3 +8,11 @@
 .single-forum .subscription-toggle  {
     float:right !important ;
 }
+
+div.bbp-breadcrumb {
+    display: none; /*this will hide all breadcrumbs*/
+    }
+     
+   .truebreadcrumbs div.bbp-breadcrumb {
+    display: block; /*this will display breadcrumbs you've created*/
+    }
